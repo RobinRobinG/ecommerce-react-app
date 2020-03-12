@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
+const firebaseConfig = {
 	apiKey: 'AIzaSyBq-FdwuO7zhCWczit89bK8UAgtFO_wp5c',
 	authDomain: 'ecommerce-project-ae2a1.firebaseapp.com',
 	databaseURL: 'https://ecommerce-project-ae2a1.firebaseio.com',
@@ -12,7 +12,7 @@ const config = {
 	appId: '1:578183360297:web:3360afb440740ba38f5138'
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
 	if (!userAuth) return;

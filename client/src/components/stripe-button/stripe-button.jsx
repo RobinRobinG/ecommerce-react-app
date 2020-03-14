@@ -11,6 +11,11 @@ function StripeCheckoutButton(props) {
   const priceForStripe = getPriceForStripe(price);
   const publishableKey = "pk_test_bCeL9TDVphSTEYQG2RxNpqOE";
 
+  const headers = {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  };
+
   const onToken = async token => {
     try {
       const response = await axios({
@@ -20,6 +25,7 @@ function StripeCheckoutButton(props) {
           amount: priceForStripe,
           token,
         },
+        headers,
       });
 
       if (response) {

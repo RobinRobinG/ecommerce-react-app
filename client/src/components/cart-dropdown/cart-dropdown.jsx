@@ -16,23 +16,25 @@ function CartDropdown(props) {
   return (
     <div className="cart-dropdown">
       <ClickOutside>
-        <div className="cart-items">
-          {cartItems.length ? (
-            cartItems.map(cartItem => (
-              <CartItem key={cartItem.id} item={cartItem} />
-            ))
-          ) : (
-            <span className="empty-message">Your Cart is empty!</span>
-          )}
+        <div className="inside-dropdown">
+          <div className="cart-items">
+            {cartItems.length ? (
+              cartItems.map(cartItem => (
+                <CartItem key={cartItem.id} item={cartItem} />
+              ))
+            ) : (
+              <span className="empty-message">Your Cart is empty!</span>
+            )}
+          </div>
+          <CustomButton
+            onClick={() => {
+              history.push("/checkout");
+              dispatch(toggleCartHidden());
+            }}
+          >
+            Go To Checkout
+          </CustomButton>
         </div>
-        <CustomButton
-          onClick={() => {
-            history.push("/checkout");
-            dispatch(toggleCartHidden());
-          }}
-        >
-          Go To Checkout
-        </CustomButton>
       </ClickOutside>
     </div>
   );

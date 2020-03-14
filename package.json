@@ -14,6 +14,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "acorn": "^7.1.1",
     "body-parser": "^1.18.3",
     "compression": "1.7.4",
     "cors": "2.8.5",

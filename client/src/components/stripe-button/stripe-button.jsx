@@ -8,7 +8,7 @@ function getPriceForStripe(price) {
 }
 
 function StripeCheckoutButton(props) {
-  const { price } = props;
+  const { price, clearCart } = props;
   const priceForStripe = getPriceForStripe(price);
   const publishableKey = "pk_test_bCeL9TDVphSTEYQG2RxNpqOE";
 
@@ -47,5 +47,11 @@ function StripeCheckoutButton(props) {
     />
   );
 }
+
+const mapDispatchToProps = dispatch => ({
+  clearCart: () => dispatch(clearCart()),
+});
+
+export default connect(null, mapDispatchToProps)(StripeCheckoutButton);
 
 export default StripeCheckoutButton;

@@ -19,7 +19,7 @@ function StripeCheckoutButton(props) {
   const onToken = async token => {
     try {
       const response = await axios({
-        url: "payment",
+        url: "/payment",
         method: "post",
         data: {
           amount: priceForStripe,
@@ -33,7 +33,7 @@ function StripeCheckoutButton(props) {
       }
     } catch (error) {
       console.log({ error });
-      console.log("Payment error");
+      console.log(`Payment error: ${error.Error}`);
       alert("There was an issue with your payment");
     }
   };

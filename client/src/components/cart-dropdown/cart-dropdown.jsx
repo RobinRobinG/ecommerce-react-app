@@ -14,25 +14,27 @@ function CartDropdown(props) {
   const { cartItems, history, dispatch } = props;
 
   return (
-    <ClickOutside className="cart-dropdown">
-      <div className="cart-items">
-        {cartItems.length ? (
-          cartItems.map(cartItem => (
-            <CartItem key={cartItem.id} item={cartItem} />
-          ))
-        ) : (
-          <span className="empty-message">Your Cart is empty!</span>
-        )}
-      </div>
-      <CustomButton
-        onClick={() => {
-          history.push("/checkout");
-          dispatch(toggleCartHidden());
-        }}
-      >
-        Go To Checkout
-      </CustomButton>
-    </ClickOutside>
+    <div className="cart-dropdown">
+      <ClickOutside>
+        <div className="cart-items">
+          {cartItems.length ? (
+            cartItems.map(cartItem => (
+              <CartItem key={cartItem.id} item={cartItem} />
+            ))
+          ) : (
+            <span className="empty-message">Your Cart is empty!</span>
+          )}
+        </div>
+        <CustomButton
+          onClick={() => {
+            history.push("/checkout");
+            dispatch(toggleCartHidden());
+          }}
+        >
+          Go To Checkout
+        </CustomButton>
+      </ClickOutside>
+    </div>
   );
 }
 

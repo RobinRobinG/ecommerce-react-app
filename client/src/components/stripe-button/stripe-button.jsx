@@ -32,7 +32,8 @@ function StripeCheckoutButton(props) {
         alert("Payment successful");
       }
     } catch (error) {
-      console.log("Payment error: ", JSON.parse(error));
+      console.log({ error });
+      console.log("Payment error");
       alert("There was an issue with your payment");
     }
   };

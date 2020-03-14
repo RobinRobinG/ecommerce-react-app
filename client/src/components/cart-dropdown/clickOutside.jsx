@@ -5,7 +5,6 @@ import { toggleCartHidden } from "../../redux/cart/cart.actions";
 function useOutsideAlerter(ref, toggleCartHidden) {
   function handleClickOutside(event) {
     if (ref.current && !ref.current.contains(event.target)) {
-      console.log("You clicked outside of me!");
       toggleCartHidden();
     }
   }

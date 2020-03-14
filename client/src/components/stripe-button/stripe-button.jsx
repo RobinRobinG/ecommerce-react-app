@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import { clearCart } from "../../redux/cart/cart.actions";
@@ -53,5 +54,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(null, mapDispatchToProps)(StripeCheckoutButton);
-
-export default StripeCheckoutButton;

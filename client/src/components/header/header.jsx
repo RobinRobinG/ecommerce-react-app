@@ -23,7 +23,7 @@ function Header(props) {
       <div className="options">
         <Link className="option" to="/shop">
           <span>SHOP</span>
-          <span class="slider"></span>
+          <span className="slider"></span>
         </Link>
         {currentUser ? (
           <div className="option" onClick={signOutStart}>

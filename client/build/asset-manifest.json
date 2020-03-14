@@ -1,24 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.3004aec4.chunk.css",
-    "main.js": "/static/js/main.a340d69f.chunk.js",
-    "main.js.map": "/static/js/main.a340d69f.chunk.js.map",
+    "main.css": "/static/css/main.0e08f158.chunk.css",
+    "main.js": "/static/js/main.7b547b65.chunk.js",
+    "main.js.map": "/static/js/main.7b547b65.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f90061d5.js",
     "runtime-main.js.map": "/static/js/runtime-main.f90061d5.js.map",
-    "static/js/2.3888fa0e.chunk.js": "/static/js/2.3888fa0e.chunk.js",
-    "static/js/2.3888fa0e.chunk.js.map": "/static/js/2.3888fa0e.chunk.js.map",
+    "static/js/2.3751645a.chunk.js": "/static/js/2.3751645a.chunk.js",
+    "static/js/2.3751645a.chunk.js.map": "/static/js/2.3751645a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.792d60e613394fea14ffeb8c0fa3d484.js": "/precache-manifest.792d60e613394fea14ffeb8c0fa3d484.js",
+    "precache-manifest.a8f055312bd34401b11783f16686bc88.js": "/precache-manifest.a8f055312bd34401b11783f16686bc88.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3004aec4.chunk.css.map": "/static/css/main.3004aec4.chunk.css.map",
-    "static/js/2.3888fa0e.chunk.js.LICENSE": "/static/js/2.3888fa0e.chunk.js.LICENSE",
-    "static/media/crown.ed28accb.svg": "/static/media/crown.ed28accb.svg",
+    "static/css/main.0e08f158.chunk.css.map": "/static/css/main.0e08f158.chunk.css.map",
+    "static/js/2.3751645a.chunk.js.LICENSE": "/static/js/2.3751645a.chunk.js.LICENSE",
+    "static/media/frenchpress-cover.jpg": "/static/media/frenchpress-cover.b3abfc19.jpg",
+    "static/media/frenchpress-icon.jpg": "/static/media/frenchpress-icon.d1866610.jpg",
+    "static/media/grinder-cover.jpg": "/static/media/grinder-cover.b37167c7.jpg",
+    "static/media/grinder-icon.jpg": "/static/media/grinder-icon.1b6264cc.jpg",
+    "static/media/kettle-cover.jpg": "/static/media/kettle-cover.11ef3e53.jpg",
+    "static/media/kettle-icon.jpg": "/static/media/kettle-icon.93208418.jpg",
+    "static/media/logo.jpg": "/static/media/logo.1ca58c70.jpg",
+    "static/media/machine-cover.jpg": "/static/media/machine-cover.b084d18b.jpg",
+    "static/media/machine-icon.jpg": "/static/media/machine-icon.cf532ff1.jpg",
+    "static/media/pourover-cover.jpg": "/static/media/pourover-cover.ac54ec94.jpg",
+    "static/media/pourover-icon.jpg": "/static/media/pourover-icon.b4bfe86b.jpg",
     "static/media/shopping-bag.30f07071.svg": "/static/media/shopping-bag.30f07071.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f90061d5.js",
-    "static/js/2.3888fa0e.chunk.js",
-    "static/css/main.3004aec4.chunk.css",
-    "static/js/main.a340d69f.chunk.js"
+    "static/js/2.3751645a.chunk.js",
+    "static/css/main.0e08f158.chunk.css",
+    "static/js/main.7b547b65.chunk.js"
   ]
 }

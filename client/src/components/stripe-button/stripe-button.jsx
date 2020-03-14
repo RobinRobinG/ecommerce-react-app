@@ -1,6 +1,7 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
+import { clearCart } from "../../redux/cart/cart.actions";
 
 function getPriceForStripe(price) {
   return price * 100;
@@ -11,11 +12,6 @@ function StripeCheckoutButton(props) {
   const priceForStripe = getPriceForStripe(price);
   const publishableKey = "pk_test_bCeL9TDVphSTEYQG2RxNpqOE";
 
-  const headers = {
-    "Content-Type": "application/json",
-    Accept: "application/json",
-  };
-
   const onToken = async token => {
     try {
       const response = await axios({
@@ -25,15 +21,14 @@ function StripeCheckoutButton(props) {
           amount: priceForStripe,
           token,
         },
-        headers,
       });
 
       if (response) {
         alert("Payment successful");
+        clearCart();
       }
     } catch (error) {
-      console.log({ error });
-      console.log(`Payment error: ${error.Error}`);
+      console.log("Payment error:", JSON.parse(error));
       alert("There was an issue with your payment");
     }
   };

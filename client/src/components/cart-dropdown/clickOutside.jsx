@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { connect } from "react-redux";
 import { toggleCartHidden } from "../../redux/cart/cart.actions";
 
 function useOutsideAlerter(ref, toggleCartHidden) {
@@ -17,11 +18,11 @@ function useOutsideAlerter(ref, toggleCartHidden) {
   });
 }
 
-function ClickOutside({ toggleCartHidden }) {
+function ClickOutside({ children, toggleCartHidden }) {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef, toggleCartHidden);
 
-  return <div ref={wrapperRef}>{props.children}</div>;
+  return <div ref={wrapperRef}>{children}</div>;
 }
 
 const mapDispatchToProps = dispatch => ({

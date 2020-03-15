@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11ef619b11513998b63d89643c3432d0",
+    "revision": "ff427fbf6055e318162d7c0637770ad9",
     "url": "/index.html"
   },
   {
-    "revision": "0527c3cadc90700de8de",
-    "url": "/static/css/main.41923f0e.chunk.css"
+    "revision": "96ff1538f32ef3b40878",
+    "url": "/static/css/main.ba50f768.chunk.css"
   },
   {
     "revision": "f0508ab5a4b5e3e2d152",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b1e0aa42.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0527c3cadc90700de8de",
-    "url": "/static/js/main.99a3e1c0.chunk.js"
+    "revision": "96ff1538f32ef3b40878",
+    "url": "/static/js/main.0e111389.chunk.js"
   },
   {
     "revision": "47d10e2dfa67fa3bdcf4",
@@ -68,7 +68,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pourover-icon.b4bfe86b.jpg"
   },
   {
-    "revision": "30f0707118fb960665491424c115ac44",
-    "url": "/static/media/shopping-bag.30f07071.svg"
+    "revision": "60cb8060cbd9b203b3ec6a1a26ce15db",
+    "url": "/static/media/shopping-bag.60cb8060.svg"
+  },
+  {
+    "revision": "8bb31b8a283912e92b79483e6bb919cf",
+    "url": "/static/media/shopping-cart.8bb31b8a.svg"
   }
 ]);

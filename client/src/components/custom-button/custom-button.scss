@@ -35,6 +35,9 @@
     background-color: white;
     color: black;
     border: 1px solid black;
+    svg {
+      fill: black;
+    }
 
     &:hover {
       background-color: black;

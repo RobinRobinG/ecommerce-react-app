@@ -7,6 +7,9 @@
   flex-grow: 1;
   margin: 10px;
   position: relative;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  cursor: pointer;
 
   .image {
     background-position: center;
@@ -17,22 +20,25 @@
     padding-top: 66.64%;
   }
 
-  .custom-button {
-    width: 50%;
+  .add-to-cart-button {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 50px;
     display: none;
-    overflow: hidden;
   }
 
   &:hover {
-    .image {
-      opacity: 0.8;
-    }
+    transform: scale(1.05);
+    opacity: 0.8;
 
-    .custom-button {
-      opacity: 0.85;
+    .add-to-cart-button {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        -webkit-filter: drop-shadow( 3px 3px 3px rgba(0, 0, 0, .9));
+        filter: drop-shadow( 3px 3px 3px  rgba(0, 0, 0, .9));
+      }
     }
   }
 

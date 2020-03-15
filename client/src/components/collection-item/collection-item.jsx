@@ -1,8 +1,8 @@
-import React from "react";
-import { connect } from "react-redux";
-import { addItem } from "../../redux/cart/cart.actions";
-import CustomButton from "../custom-button/custom-button";
-import "./collection-item.scss";
+import React from 'react';
+import { connect } from 'react-redux';
+import { addItem } from '../../redux/cart/cart.actions';
+import { ReactComponent as ShoppingCartIcon } from '../../assets/shopping-cart.svg';
+import './collection-item.scss';
 
 function CollectionItem(props) {
   const { item, addItem } = props;
@@ -15,9 +15,9 @@ function CollectionItem(props) {
         <span className="name">{name}</span>
         <span className="price">${price}</span>
       </div>
-      <CustomButton onClick={() => addItem(item)} inverted>
-        Add to Cart
-      </CustomButton>
+      <div onClick={() => addItem(item)} className="add-to-cart-button">
+        <ShoppingCartIcon />
+      </div>
     </div>
   );
 }

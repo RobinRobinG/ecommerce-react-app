@@ -1,5 +1,5 @@
-import React from "react";
-import "./cart-item.scss";
+import React, { memo } from 'react';
+import './cart-item.scss';
 
 function CartItem(props) {
   const { item } = props;
@@ -20,4 +20,4 @@ function CartItem(props) {
   );
 }
 
-export default CartItem;
+export default memo(CartItem);

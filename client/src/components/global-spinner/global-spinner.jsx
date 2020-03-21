@@ -1,11 +1,11 @@
 import React from 'react';
-import './global-spinner.scss';
+import { SpinnerOverlay, SpinnerContainer } from './with-spinner.styles';
 
 const GlobalSpinner = props => {
   return (
-    <div className="global-spinner-overlay">
-      <p>Loading...</p>
-    </div>
+    <SpinnerOverlay>
+      <SpinnerContainer />
+    </SpinnerOverlay>
   );
 };
 

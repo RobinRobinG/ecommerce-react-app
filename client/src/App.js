@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect, Fragment, lazy, Suspense } from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
@@ -22,7 +22,7 @@ function App({ checkUserSession, currentUser }) {
   }, [checkUserSession]);
 
   return (
-    <div style={{ fontFamily: 'Open Sans Condensed' }}>
+    <Fragment>
       <Header />
       <Switch>
         <ErrorBoundary>
@@ -40,7 +40,7 @@ function App({ checkUserSession, currentUser }) {
           </Suspense>
         </ErrorBoundary>
       </Switch>
-    </div>
+    </Fragment>
   );
 }
 

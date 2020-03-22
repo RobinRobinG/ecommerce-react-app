@@ -1,8 +1,11 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  src: local('Open Sans Condensed'), url(./fonts/OpenSansCondensed-Light.ttf);
+  font-display: swap;
+}
+
 body {
   font-family: 'Open Sans Condensed';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-display: swap;
   padding: 20px 60px;
   margin: 0;
 }

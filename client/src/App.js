@@ -8,6 +8,7 @@ import GlobalSpinner from './components/global-spinner/global-spinner';
 import { Helmet } from 'react-helmet';
 import Header from './components/header/header';
 import ErrorBoundary from './components/error-boundary/error-boundary';
+import './fonts/OpenSansCondensed-Light.ttf';
 import './App.scss';
 
 const HomePage = lazy(() => import('./pages/homepage/homepage'));

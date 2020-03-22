@@ -1,10 +1,11 @@
-import React, { useEffect, Fragment, lazy, Suspense } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 import { checkUserSession } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import GlobalSpinner from './components/global-spinner/global-spinner';
+import { Helmet } from 'react-helmet';
 import Header from './components/header/header';
 import ErrorBoundary from './components/error-boundary/error-boundary';
 import './App.scss';
@@ -22,7 +23,12 @@ function App({ checkUserSession, currentUser }) {
   }, [checkUserSession]);
 
   return (
-    <Fragment>
+    <div className="application">
+      <Helmet>
+        <html lang="en" />
+        <meta charSet="utf-8" />
+        <title>My Shop</title>
+      </Helmet>
       <Header />
       <Switch>
         <ErrorBoundary>
@@ -40,7 +46,7 @@ function App({ checkUserSession, currentUser }) {
           </Suspense>
         </ErrorBoundary>
       </Switch>
-    </Fragment>
+    </div>
   );
 }
 

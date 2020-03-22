@@ -7,7 +7,7 @@ import { selectCurrentUser } from './redux/user/user.selectors';
 import GlobalSpinner from './components/global-spinner/global-spinner';
 import Header from './components/header/header';
 import ErrorBoundary from './components/error-boundary/error-boundary';
-import './App.css';
+import './App.scss';
 
 const HomePage = lazy(() => import('./pages/homepage/homepage'));
 const ShopPage = lazy(() => import('./pages/shop/shop'));

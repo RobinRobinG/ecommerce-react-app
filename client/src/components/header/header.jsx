@@ -1,15 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-import { selectCartHidden } from "../../redux/cart/cart.selectors";
-import { selectCurrentUser } from "../../redux/user/user.selectors";
-import Logo from "../../assets/logo.jpg";
-import CartDropdown from "../cart-dropdown/cart-dropdown";
-import CartIcon from "../cart-icon/cart-icon";
-import { signOutStart } from "../../redux/user/user.actions";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
+import Logo from '../../assets/logo.svg';
+import CartDropdown from '../cart-dropdown/cart-dropdown';
+import CartIcon from '../cart-icon/cart-icon';
+import { signOutStart } from '../../redux/user/user.actions';
 
-import "./header.scss";
+import './header.scss';
 
 function Header(props) {
   const { currentUser, hidden, signOutStart } = props;
